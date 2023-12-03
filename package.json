@@ -1,12 +1,15 @@
 {
   "name": "bike-site-poc",
+  "homepage": "https://hamilsauce.github.io/bike-site-poc",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "predeploy": "npm run build",
+    "deploy": "cd dist && cp index.html 404.html && cd .. && gh-pages -d dist"
   },
   "dependencies": {
     "@mdi/font": "7.0.96",
@@ -24,6 +27,7 @@
     "@vue/eslint-config-typescript": "^11.0.0",
     "eslint": "^8.37.0",
     "eslint-plugin-vue": "^9.3.0",
+    "gh-pages": "^6.1.0",
     "sass": "^1.60.0",
     "typescript": "^5.0.0",
     "unplugin-fonts": "^1.0.3",
