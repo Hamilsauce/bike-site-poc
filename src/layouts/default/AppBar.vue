@@ -3,7 +3,7 @@
     <v-app-bar-title>
       <v-icon icon="mdi-circle-slice-6" />
 
-      Essentials Preset
+      BIKE TOWN HOME OF THE BIKE SALES
     </v-app-bar-title>
   </v-app-bar>
 </template>
